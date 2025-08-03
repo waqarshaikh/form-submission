@@ -18,30 +18,33 @@
 
     form {
       background: white;
-      padding: 30px;
+      padding: 30px 40px; /* Increased right-left padding */
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
       width: 100%;
-      max-width: 400px;
+      max-width: 500px;
+      box-sizing: border-box;
     }
 
     input, select, textarea {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 5px;
+      padding: 12px 14px;
+      margin-bottom: 25px; /* Increased space between fields */
+      border-radius: 6px;
       border: 1px solid #ccc;
+      box-sizing: border-box;
     }
 
     button, .admin-button {
-      padding: 10px 20px;
+      padding: 12px 24px;
       border: none;
       background-color: #007bff;
       color: white;
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
       text-decoration: none;
+      transition: background-color 0.3s;
     }
 
     button:hover, .admin-button:hover {
@@ -50,13 +53,13 @@
 
     .admin-button {
       display: inline-block;
-      margin-top: 10px;
-      text-align: center;
+      margin-top: 16px;
     }
   </style>
 </head>
 <body>
   <h2>Submit Your Data</h2>
+
   <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}

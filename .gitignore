@@ -8,9 +8,6 @@ venv/
 env/
 ENV/
 
-# SQLite database (optional, but recommended to not commit DB)
-db.sqlite3
-
 # Django static files collected
 staticfiles/
 

@@ -1,0 +1,34 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folder
+venv/
+env/
+ENV/
+
+# SQLite database (optional, but recommended to not commit DB)
+db.sqlite3
+
+# Django static files collected
+staticfiles/
+
+# Django media uploads (if any)
+media/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Env variables file
+.env
